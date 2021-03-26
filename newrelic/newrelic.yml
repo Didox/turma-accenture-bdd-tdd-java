@@ -26,11 +26,11 @@ common: &default_settings
   # Otherwise, the agent reports only background tasks (transactions for non-web applications)
   # to this application. To report data to more than one application 
   # (useful for rollup reporting), separate the application names with ";".
-  # For example, to report data to "My Application" and "My Application 2" use this:
-  # app_name: My Application;My Application 2
+  # For example, to report data to "Treinamento Testes" and "Treinamento Testes 2" use this:
+  # app_name: Treinamento Testes;Treinamento Testes 2
   # This setting is required. Up to 3 different application names can be specified.
   # The first application name must be unique.
-  app_name: My Application
+  app_name: Treinamento Testes
 
   # To enable high security, set this property to true. When in high
   # security mode, the agent will use SSL and obfuscated SQL. Additionally,
@@ -291,15 +291,15 @@ common: &default_settings
 
 development:
   <<: *default_settings
-  app_name: My Application (Development)
+  app_name: Treinamento Testes (Development)
 
 test:
   <<: *default_settings
-  app_name: My Application (Test)
+  app_name: Treinamento Testes (Test)
 
 production:
   <<: *default_settings
 
 staging:
   <<: *default_settings
-  app_name: My Application (Staging)
+  app_name: Treinamento Testes (Staging)
